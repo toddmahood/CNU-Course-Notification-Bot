@@ -1,0 +1,4 @@
+requests
+ezgmail
+mysql.connector
+CNU-Course-API
