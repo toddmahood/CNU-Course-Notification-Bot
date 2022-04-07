@@ -29,7 +29,7 @@ while True:
     schedule = CNUSchedule("May 2022")
     for course in schedule.courses:
         if course.crn in crn_list:
-            if int(course.seats_available) > 0: # Probably ought to change some of the course attribute types.
+            if course.seats_available > 0: # Probably ought to change some of the course attribute types.
                 print("CLASS OPEN")
                 print(course)
                 payload={"username": "CNU Notifier", "avatar_url": "https://cdn.discordapp.com/attachments/749755539331874898/961422345849933884/unknown.png",'content': f'<@457580945269063710> {course.course_name}: {course.title} is open for registration!'}
